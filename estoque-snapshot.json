@@ -9,8 +9,8 @@
       "status": "ABERTO",
       "linha": 1,
       "valido": true,
-      "vencidoOperacional": true,
-      "pdd": 5000
+      "vencidoOperacional": false,
+      "pdd": 0
     },
     {
       "cedente": "Alfa Comercio Ltda",
@@ -22,7 +22,7 @@
       "linha": 2,
       "valido": true,
       "vencidoOperacional": true,
-      "pdd": 0
+      "pdd": 2000
     },
     {
       "cedente": "Beta Servicos Ltda",
@@ -33,8 +33,8 @@
       "status": "ABERTO",
       "linha": 3,
       "valido": true,
-      "vencidoOperacional": true,
-      "pdd": 70000
+      "vencidoOperacional": false,
+      "pdd": 0
     },
     {
       "cedente": "Gama Industria Ltda",
@@ -57,8 +57,8 @@
       "status": "ABERTO",
       "linha": 5,
       "valido": true,
-      "vencidoOperacional": false,
-      "pdd": 0
+      "vencidoOperacional": true,
+      "pdd": 3000
     },
     {
       "cedente": "Echo Transportes Ltda",
@@ -70,7 +70,7 @@
       "linha": 6,
       "valido": true,
       "vencidoOperacional": true,
-      "pdd": 0
+      "pdd": 10000
     }
   ],
   "importados": 6,
@@ -79,8 +79,8 @@
   "totais": {
     "ativoQuantidade": 5,
     "ativoSoma": 100000,
-    "percentualVencido": 94,
-    "pddTotal": 75000,
+    "percentualVencido": 20,
+    "pddTotal": 15000,
     "maiorSacado": {
       "nome": "hospital central",
       "percentual": 70
