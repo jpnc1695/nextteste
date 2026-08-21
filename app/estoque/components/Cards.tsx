@@ -1,3 +1,4 @@
+
 import { EstoqueSnapshot } from '@/types/estoque';
 
 interface CardsProps {
@@ -37,7 +38,7 @@ export default function Cards({ totais }: CardsProps) {
           <p className="text-yellow-700 font-semibold">⚠️ Alertas de concentração:</p>
           <ul className="list-disc list-inside">
             {concentracaoAlertas.map((a, i) => (
-              <li key={i}>
+              <li key={i} className='text-black'>
                 {a.sacado}: {a.percentual.toFixed(1)}% (limite 25%)
               </li>
             ))}
@@ -52,7 +53,7 @@ function Card({ title, value }: { title: string; value: string | number }) {
   return (
     <div className="bg-white p-4 rounded shadow border border-gray-200">
       <div className="text-sm text-gray-500">{title}</div>
-      <div className="text-xl font-bold">{value}</div>
+      <div className="text-xl font-bold text-black">{value}</div>
     </div>
   );
 }
