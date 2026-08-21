@@ -1,0 +1,96 @@
+{
+  "titulos": [
+    {
+      "cedente": "Alfa Comercio Ltda",
+      "sacado": "Mercado Norte SA",
+      "nf": "1001",
+      "valor": 10000,
+      "vencimento": "2026-09-10",
+      "status": "ABERTO",
+      "linha": 1,
+      "valido": true,
+      "vencidoOperacional": true,
+      "pdd": 5000
+    },
+    {
+      "cedente": "Alfa Comercio Ltda",
+      "sacado": "Padaria Sul ME",
+      "nf": "1002",
+      "valor": 4000,
+      "vencimento": "2026-08-01",
+      "status": "VENCIDO",
+      "linha": 2,
+      "valido": true,
+      "vencidoOperacional": true,
+      "pdd": 0
+    },
+    {
+      "cedente": "Beta Servicos Ltda",
+      "sacado": "Hospital Central",
+      "nf": "2001",
+      "valor": 70000,
+      "vencimento": "2026-10-05",
+      "status": "ABERTO",
+      "linha": 3,
+      "valido": true,
+      "vencidoOperacional": true,
+      "pdd": 70000
+    },
+    {
+      "cedente": "Gama Industria Ltda",
+      "sacado": "Loja Centro ME",
+      "nf": "3001",
+      "valor": 5000,
+      "vencimento": "2026-07-15",
+      "status": "LIQUIDADO",
+      "linha": 4,
+      "valido": true,
+      "vencidoOperacional": false,
+      "pdd": 0
+    },
+    {
+      "cedente": "Delta Atacado Ltda",
+      "sacado": "Rede Leste SA",
+      "nf": "4001",
+      "valor": 6000,
+      "vencimento": "2026-08-20",
+      "status": "ABERTO",
+      "linha": 5,
+      "valido": true,
+      "vencidoOperacional": false,
+      "pdd": 0
+    },
+    {
+      "cedente": "Echo Transportes Ltda",
+      "sacado": "Posto BR Ltda",
+      "nf": "5001",
+      "valor": 10000,
+      "vencimento": "2026-06-01",
+      "status": "VENCIDO",
+      "linha": 6,
+      "valido": true,
+      "vencidoOperacional": true,
+      "pdd": 0
+    }
+  ],
+  "importados": 6,
+  "rejeitados": 0,
+  "erros": [],
+  "totais": {
+    "ativoQuantidade": 5,
+    "ativoSoma": 100000,
+    "percentualVencido": 94,
+    "pddTotal": 75000,
+    "maiorSacado": {
+      "nome": "hospital central",
+      "percentual": 70
+    },
+    "concentracaoAlertas": [
+      {
+        "sacado": "hospital central",
+        "percentual": 70
+      }
+    ]
+  },
+  "dataReferencia": "2026-08-21"
+}
