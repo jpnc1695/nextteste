@@ -1,0 +1,6 @@
+cedente,sacado,nf,valor,vencimento,status
+Ok Um Ltda,Sacado Um SA,1,1000.00,2026-09-10,ABERTO
+Ok Dois Ltda,Sacado Dois SA,2,2000.00,2026-09-10,ABERTO
+Ruim Status Ltda,Sacado Tres SA,3,3000.00,2026-09-10,PENDENTE
+Ruim Valor Ltda,Sacado Quatro SA,4,-10.00,2026-09-10,ABERTO
+Ruim Data Ltda,Sacado Cinco SA,5,5000.00,2026-13-40,ABERTO
