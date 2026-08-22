@@ -1,0 +1,56 @@
+# Dependências
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+.next
+out
+dist
+build
+
+# Ambiente
+.env
+.env.local
+.env.production
+.env.development
+
+# Versionamento
+.git
+.gitignore
+README.md
+LICENSE
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de snapshot (opcional)
+estoque-snapshot.json
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Logs
+logs
+*.log
+
+# Testes (se houver)
+coverage
+.nyc_output
+__tests__
+
+# Outros
+*.csv
+*.xlsx
+*.xls
