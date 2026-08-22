@@ -1,31 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Project - nextteste
 
-## Getting Started
+Bem-vindo ao projeto nextteste! Esta é uma aplicação web construída com Next.js, o framework React para produção.
 
-First, run the development server:
+---
+
+## Sobre o Projeto
+
+Este projeto foi criado para demonstrar uma aplicação Next.js moderna com TypeScript, Tailwind CSS e as melhores práticas de desenvolvimento.
+
+**Tecnologias utilizadas:**
+- Next.js 14+
+- React 18+
+- TypeScript
+- Tailwind CSS
+- ESLint
+
+---
+
+## Primeiros Passos
+
+### O que você precisa ter instalado
+
+Antes de executar o projeto, instale:
+
+1. **Node.js** (versão 18.17 ou superior)
+   - Baixe em: https://nodejs.org/
+   - Verifique a instalação: `node --version`
+
+2. **npm** (gerenciador de pacotes)
+   - Já vem com o Node.js
+   - Verifique a versão: `npm --version`
+
+3. **Git** (para clonar o repositório)
+   - Baixe em: https://git-scm.com/
+
+### Como baixar o projeto
+
+Abra seu terminal e execute:
 
 ```bash
-`npm install` / `npm run dev`
-#
-```
+# Clona o repositório para sua máquina
+git clone https://github.com/jpnc1695/nextteste
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Entra na pasta do projeto
+cd nextteste
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Após entrar na pasta, intalar o node_module
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Executar o projeto, rodando no termnial
+npm run dev
