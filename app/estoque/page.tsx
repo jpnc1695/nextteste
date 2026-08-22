@@ -7,6 +7,8 @@ import Filter from './components/Filter';
 import ErrorPanel from './components/ErrorPanel';
 import Tabela from './components/Tabela';
 import { EstoqueSnapshot } from '@/types/estoque';
+import { useRouter } from 'next/navigation';
+
 
 
 type FilterType = 'todos' | 'ABERTO' | 'VENCIDO' | 'LIQUIDADO';
@@ -16,6 +18,7 @@ export default function EstoquePage() {
   const [loading, setLoading] = useState(false);
   const [filter, setFilter] = useState<FilterType>('todos');
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
 
   // Carrega snapshot inicial
   useEffect(() => {
@@ -34,6 +37,7 @@ export default function EstoquePage() {
     }
   }
 
+  
   async function handleImport(file: File) {
     setLoading(true);
     setErrorMessage(null);
