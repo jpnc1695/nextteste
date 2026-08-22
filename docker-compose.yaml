@@ -1,0 +1,15 @@
+services:
+  app:
+    build:
+      context: .
+      target: development   # ou production, se quiser
+    container_name: next-estoque
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app               # monta código local para hot reload
+      - /app/node_modules    # mantém node_modules do container (não sobrescreve)
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true
