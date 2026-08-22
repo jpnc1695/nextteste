@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
         permanent: true, // Use true para redirecionamento 308 (permanente) ou false para 307 (temporário)
       },
     ];
-  },cl
+  }
 };
 
 export default nextConfig;
