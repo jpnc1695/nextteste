@@ -62,5 +62,4 @@ git clone https://github.com/jpnc1695/nextteste
 cd nextteste
 
 #Opção de utilização do Docker
-docker compose up --build
-```
+docker compose up --build ou docker-compose up
