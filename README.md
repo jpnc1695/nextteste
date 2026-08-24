@@ -14,6 +14,7 @@ Este projeto foi criado para demonstrar uma aplicação Next.js moderna com Type
 - TypeScript
 - Tailwind CSS
 - ESLint
+- Docker
 
 ---
 
@@ -50,3 +51,16 @@ npm install
 
 # Executar o projeto, rodando no termnial
 npm run dev
+```
+Opção com Docker:
+
+```bash
+# Clona o repositório para sua máquina
+git clone https://github.com/jpnc1695/nextteste
+
+# Entra na pasta do projeto
+cd nextteste
+
+#Opção de utilização do Docker
+docker compose up --build
+```
