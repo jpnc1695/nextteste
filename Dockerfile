@@ -1,7 +1,7 @@
 # ============================================
-# Estágio 1: Base com Node.js
+# Estágio 1: Base com Node.js 20 (slim para compatibilidade)
 # ============================================
-FROM node:18-alpine AS base
+FROM node:20-slim AS base   
 WORKDIR /app
 
 # ============================================
@@ -9,19 +9,10 @@ WORKDIR /app
 # ============================================
 FROM base AS development
 
-# Copia os arquivos de dependência
 COPY package.json package-lock.json ./
-
-# Instala todas as dependências (incluindo devDependencies)
 RUN npm ci --legacy-peer-deps
-
-# Copia o restante do código fonte
 COPY . .
-
-# Expõe a porta do Next.js
 EXPOSE 3000
-
-# Comando para desenvolvimento com hot reload
 CMD ["npm", "run", "dev"]
 
 # ============================================
@@ -29,14 +20,9 @@ CMD ["npm", "run", "dev"]
 # ============================================
 FROM base AS builder
 
-# Copia dependências do estágio anterior
 COPY package.json package-lock.json ./
 RUN npm ci --legacy-peer-deps
-
-# Copia o código fonte
 COPY . .
-
-# Gera o build de produção
 RUN npm run build
 
 # ============================================
@@ -44,14 +30,13 @@ RUN npm run build
 # ============================================
 FROM base AS production
 
-# Copia apenas o necessário para produção
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/package-lock.json ./package-lock.json
-COPY --from=builder /app/next.config.js ./next.config.js
+# Se você NÃO tem o arquivo next.config.js, remova ou comente a linha abaixo:
+# COPY --from=builder /app/next.config.js ./next.config.js
 COPY --from=builder /app/node_modules ./node_modules
-
 
 EXPOSE 3000
 CMD ["npm", "start"]
